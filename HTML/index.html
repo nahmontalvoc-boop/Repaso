@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Mi primera web </title>
+    <style>
+        table, th, td 
+        {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 500px;">
+        <thead>
+        <tr> <!--Este comando sirve para crear filas-->
+            <th>Producto</th> <!--Este comando sirve para crear columnas-->
+            <th>precio</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Hola beats</td><!--Este comando sirve para crear celdas-->
+            <td>Gratis</td>
+        </tr>
+        <tr>
+            <td>Chanchito feliz</td><!--Este comando sirve para crear celdas-->
+            <td>20.50$</td>
+        </tr>
+       <tr>
+            <td>Chanchito feliz muy feliz</td><!--Este comando sirve para crear celdas-->
+            <td>$30.99</td>
+        </tr>
+         <tbody>
+            <tfoot>
+                <td></td>
+                <td>Total:$51.49</td>
+            </tfoot>
+    </table>
+
+    <ul> <!--Este comando sirve para crear listas desordenadas-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <ol> <!--Este comando sirve para crear listas ordenadas-->
+        <li value="10">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <lo>
+                    <li style="list-style-type: lower-alpha;">Sub elemento 1</li>
+            </lo>
+        </li>
+    </ol>
+        <form action="/formulario" method="POST" >
+            <label for="nombre">Nombre</label>
+            <!--"placeholder" siver para poder poner nombres dentro del cuadro de texto -->
+            <!--el type siempre esta por defecto en texto pero igual se pueden usar diferentes
+            por ejemplo:submid(boton),email,password,radio,checkbox,file -->
+            <input value="Chanchito" type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+            <br>
+            <label for="apellido">apellido </label>
+            <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Chanchito triste"/>
+            <br>
+            <label for="comentario">Comentario</label>
+            <br>
+            <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario">Este es un valor por defecto</textarea>
+            <br>
+            <!--hay 3 tipos de botones: submit(), reset(vuelve a los valores por defecto), button(se programa con javascript) -->
+            <button type="button">Tipo boton</button>
+            <button type="reset">Tipo reset</button>
+            <button type="submit">Tipo submit</button>
+
+        </form>
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>MI quinto heading</h5>
+    <h6>Chanchito feliz</h6>
+    <p>Chanchito feliz esta muy feliz.</p>
+    <P>Chanchito triste esta muy triste</P>
+    <hr><!--Este sirver para que nos deje una linea unos permita separar los textos-->
+    <h2>Chanchito felipe</h2>
+    <p>Texto un poco más</p>
+    <!--Este comando son para los comentarios-->
+    <!--<br> sirve para hacer saltos de linea -->
+    <!--<span> sirve para poder marcar un texto dentro de un parrafo ejemplo:para poder realtar un color -->
+    <!--Este apartado sirve para poder poner los hipervinculos -->
+    <ul>
+        <li><a  href="https://www.google.co.nz">Ir a google</a></li>
+        <li><a  href="file:///D:/Repasos/HTML/blog.html">Ir a mi blog</a></li>
+        <li><a href="file:///D:/Repasos/HTML/index.html">Ir a index</a></li>
+    </ul>
+    <!--Aqui termina el apartado para los hipervinculos-->
+    <!--este comando sirve para agregar imagenes se puede usar el "height" o el "width"-->
+    <img src="img/fish.jpg" width="300"/>
+
+</body>
+</html>
